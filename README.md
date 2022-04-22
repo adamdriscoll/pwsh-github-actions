@@ -1,2 +1,3 @@
-# pwsh-github-actions
+# PowerShell GitHub Actions
+
 Examples of PowerShell GitHub actions
