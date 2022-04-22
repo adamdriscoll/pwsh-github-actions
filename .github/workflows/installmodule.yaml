@@ -1,0 +1,14 @@
+name: Install Module
+on: [workflow_dispatch]
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - name: Script
+          run: |
+            Set-PSRepository PSGallery -InstallationPolicy Trusted
+            Install-Module Universal 
+          shell: pwsh

@@ -1,0 +1,15 @@
+name: Multiline
+on: [workflow_dispatch]
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - name: Script
+          run: |
+            Write-Host "Line 1"
+            Write-Host "Line 2"
+            Write-Host "Line 3"
+          shell: pwsh
