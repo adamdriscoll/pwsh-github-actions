@@ -1,4 +1,4 @@
-name: Install Module
+name: List Modules
 on: [workflow_dispatch]
 
 jobs:
