@@ -16,3 +16,5 @@ This repository contains examples of using PowerShell in GitHub actions. The lis
 - [Windows PowerShell](./.github/workflows/windows.yaml)
 
 I'm always open to PRs!
+
+To see these actions, erm, in action, check out this [YouTube video](https://youtu.be/FU7w7We_hh8).
