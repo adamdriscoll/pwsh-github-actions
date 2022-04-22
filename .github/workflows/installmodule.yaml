@@ -11,4 +11,5 @@ jobs:
           run: |
             Set-PSRepository PSGallery -InstallationPolicy Trusted
             Install-Module Universal 
+            Get-Module Universal -ListAvailable
           shell: pwsh
