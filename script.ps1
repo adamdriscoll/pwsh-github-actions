@@ -12,6 +12,6 @@ if ($ExitCode) {
     $LASTEXITCODE = 5
 }
 
-$MyVariable
+$Env:MyVariable
 $Parameter1
 $PSVersionTable
