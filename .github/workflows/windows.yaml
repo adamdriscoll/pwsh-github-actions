@@ -1,5 +1,5 @@
-name: CI
-on: [push, pull_request]
+name: Windows PowerShell
+on: [workflow_dispatch]
 
 jobs:
     build:
