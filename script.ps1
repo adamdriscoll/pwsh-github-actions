@@ -13,6 +13,7 @@ if ($ExitCode) {
 }
 
 gci
+gci
 
 $Env:MyVariable
 $Parameter1
