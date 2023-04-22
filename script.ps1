@@ -11,7 +11,9 @@ if ($Fail) {
 if ($ExitCode) {
     exit 5
 }
-#tossing in comment
+
+gci
+
 $Env:MyVariable
 $Parameter1
 $PSVersionTable
