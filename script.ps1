@@ -14,6 +14,8 @@ if ($ExitCode) {
 
 gci
 
+$thing = "string"
+
 $Env:MyVariable
 $Parameter1
 $PSVersionTable
