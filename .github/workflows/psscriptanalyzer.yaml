@@ -1,12 +1,27 @@
-name: CI
+name: Lint Code Base
+
 on: [pull_request]
+
 jobs:
-  lint:
-    name: Run PSSA
+  build:
+    name: Run Psscriptanalyzer
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+
+
     steps:
-    - uses: actions/checkout@v2
-    - name: lint
-      uses: devblackops/github-action-psscriptanalyzer@master
-      with:
-        repoToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout Code
+      - uses: actions/checkout@v3
+
+      - name: Lint PowerShell Code
+        uses: github/PowerShell/Psscriptanalyzer
+        with:
+          sendComment: true
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
