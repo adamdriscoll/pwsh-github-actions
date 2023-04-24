@@ -3,7 +3,7 @@ name: Lint Code Base
 on: [pull_request]
 
 jobs:
-  build:
+  lint:
     name: Run Psscriptanalyzer
     runs-on: ubuntu-latest
 
@@ -12,10 +12,9 @@ jobs:
       packages: read
       statuses: write
 
-
     steps:
       - name: Checkout Code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Lint PowerShell Code
         uses: github/PowerShell/Psscriptanalyzer
