@@ -3,7 +3,7 @@ name: Lint Code Base
 on: [pull_request]
 
 jobs:
-  lint:
+  build:
     name: Run Psscriptanalyzer
     runs-on: ubuntu-latest
 
@@ -24,3 +24,4 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #if: ${{ always() }}
