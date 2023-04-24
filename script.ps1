@@ -14,7 +14,7 @@ if ($ExitCode) {
 
 gci
 
-$thing = "strin" 
+$thing = "string" 
  
 $Env:MyVariable
 $Parameter1
